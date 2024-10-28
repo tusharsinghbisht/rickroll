@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh no!!!</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(31, 31, 31);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        video {
+            position: absolute;
+            width: 700px;
+            aspect-ratio: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media only screen and (max-width: 700px) {
+            video {
+                width: 400px;
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            video {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <video id="video" src="./ayo.mp4" autoplay controls loop>
+    </video>
+
+    <script>
+        document.body.onclick = () => {
+            window.open("https://tusharr.xyz/", "_blank")
+        }
+    </script>
+</body>
+</html>
